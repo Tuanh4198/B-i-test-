@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.cover{
+    display: flex;
+    justify-content: space-between;
+
+}
+.cover .menu{
+    width: 20%;
+    height: 570px;
+}
+.cover .menu ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.cover .menu ul li{
+    width: 100%;
+    display: flex;
+    /* margin: 5px 0; */
+    padding-left: 10;
+    height: 60px;
+    line-height: 60px;
+}
+.cover .menu .icon{
+    width: 10%;
+}
+.cover .menu .text{
+    width: 90%;
+    color: black;
+    font-size: 15px;
+    /* height: 40px; */
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 13px;
+    height: 60px;
+    line-height: 60px;
+}
+.cover .slide{
+    width: 70%;
+    height: 430px;
+}
+.cover .slide img{
+	height: 430px;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	transition: 0.4s;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.cover .slide img.hien{
+	opacity: 1;
+	visibility: visible;
+	display: block;
+	animation: hienra 0s forwards;
+}
+@-webkit-keyframes hienra{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.cover .slide img.an{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	animation: andi 0s forwards;
+}
+@-webkit-keyframes andi{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+.cover .slide img.batdau{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+.cover .slide i{
+	position: relative;
+	color: white;
+	cursor: pointer;
+}
+.cover .slide i:hover{
+	color: grey;
+}
+.cover .slide i.trai{
+    top: -236px;;
+    left: 7px;
+    font-size: 55px;
+}
+.cover .slide i.phai{
+    top: -236px;
+    right: -537px;
+    font-size: 50px;
+}
+.cover .right{
+    width: 30%;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap; 
+}
+.cover .right .img{
+	width: 100%;
+	height: 50%;
+}
+.cover-menu{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.bot-slide{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+}
+.bot-slide .qc{
+    width: 25%;
+    height: 110px;
+    display: flex;
+}
+.bot-slide .qc img{
+    width: 40px;
+    height: 50px;
+}
+.bot-slide .qc .text{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    width: 200px;
+    height: 60px;
+}
+.bot-slide .qc .text-top{
+    color: black;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.bot-slide .qc .text-bot{
+    color: #9a7979;
+    height: 30px;
+    line-height: 10px;
+    font-size: 10px;
+}
+.bottom{
+	width: 100%;
+	height: 420px;
+	float: left;
+}
+.cover-bottom{
+	width: 1140px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.cover-bottom span{width: 100%;color: #1e1e8c;font-weight: bold;padding-left: 20px;}
+.bottom {
+	width: 20%;
+}
+.bottom .slide-duoi{}
+.bottom .slide-duoi .anh{}
+.bottom .slide-duoi .anh img{}
+.bottom .slide-duoi .name{
+    margin-bottom: 10px;
+    color: black;
+    padding: 0 5px;
+}
+.bottom .slide-duoi .name a{color: black;}
+.bottom .slide-duoi .price{
+    margin-bottom: 14px;
+    color: #129fd8;
+    padding: 0 5px;
+}
+.bottom .slide-duoi .button{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff6600;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: white;
+    margin: 0 5px;
+}
+.bottom .slide-duoi .button .icon{}
+.bottom .slide-duoi .button .chu{}
+.cover-bottom >i{
+	color: #e0e0e0;
+	position: relative;
+	top: -332px;
+	font-size: 50px;
+	padding: 0 15px;
+}
