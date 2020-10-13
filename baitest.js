@@ -40,3 +40,4 @@ document.addEventListener("DOMContentLoaded",function(){
 	console.log(nut);
 	console.log(slides);
 },false)
+// lsalamksdasdsal;dlsa;d;lsakd;sak;flk;á
